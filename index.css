@@ -24,19 +24,29 @@ body {
     padding: 14px 20px;
     text-decoration: none;
  }
- row {
-    display: flex;
-    flex-wrap:wrap ;
+ .container {
+   display: flex;
+   justify-content: space-between;
+   
  }
  aside {
-    flex:30px;
-    background-color: beige;
-    padding: 20px;
+   
+   background-color: #666666;
+   color: white;
+    
  }
+
+ main{
+  
+  background-color: #99cc33;
+  color: white;
+   
+}
  section {
-    flex:70px;
-    background-color: khaki;
-    padding: 20px;
+   
+   background-color: #333333;
+   color: white;
+    
  }
  footer {
     padding: 20px;
@@ -45,7 +55,7 @@ body {
  }
 
 @media screen and (max-width:700px) {
-   nav, .row {
+   nav, .container {
         flex-direction: column;
     }
 }
