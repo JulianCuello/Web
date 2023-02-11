@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="img/imagen portada.jpg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Inscrpcion</title>
 </head>
 <body>
-    <h1>Formulario de inscripcion</h1>
+    <header>
+        <h1>Futbol para todos </h1>
+            <nav>
+                <ul class="navegation"> 
+                        <li> <button class="nav-button"> <a  href="index.html" > Inicio </a> </button></li>
+                        <li> <button class="nav-button"> <a  href="inscripcion.html" > Inscripcion </a> </button></li>
+                        <li> <button class="nav-button"> <a  href="torneos.html" > torneos </a> </button></li>
+                      <li> <button class="nav-button"> <a  href="login.html" > login </a> </button></li>
+               </ul>
+             </nav>
+    </header>
+
+        <article class="inscripcion">
+            <div class="requisitos">
+                <h2> 
+                    Formulario de inscripcion 
+                </h2>
+
+                <p>
+                    Para la inscripcion en los torneos que se realizaran este 2023 se va a requerir el cumplimiento 
+                    de algunos condicionantes. En funcion de algunas tragedias que han sufrido nuestros participantes
+                        en distintos eventos deportivos, se va a requerir que a partir de 28/5/2023 cada persona que desee
+                        participar en nuestros eventos cumpla con los siguientes requisitos:
+                </p>  
+            <div>
+                <ul class="requisito-torneo">
+                    <li>Certificado medico autorizado por un especialista</li>
+                    <li>Un seguro de vida</li>
+                    <li>Indumentaria apropiada para cada partido (botines, medias, remeras de cada equipo etc) </li>
+                    <li>Botella de agua para hidratarse al finalizar cada partido (por las olas de calor) </li>
+                    <li>No se permite la ingesta de alcohol</li>
+
+                </ul>
+            </div>
+        </div>
+
+        </article>
+    
+<p> Para inscribirse a nuestras competencias se debera completar los siguientes datos:</p>
+    <form>
+        <input type="radio" name="sexo" value="masculino"/> Masculino
+        <input type="radio" name="sexo" value="femenino"/> Femenino
+        <input type="radio" name="sexo" value="mixto"/> Mixto    
+    </form>
+   
+    <form>
+        <section class="datos_inscripcion">
+    
+            <label for=""> NOMBRE Y APELLIDO/FULL NAME:</label>
+             <input class="controls" type="text" name= "firma" value="" placeholder="Nombre y Apellido">
+         
+            <label for=""> DIRECCION:</label>
+             <input class="controls" type="text" name="Contrasena" value="" placeholder="Direccion/adress. ">
+         
+            <label for=""> NOMBRE CONTACTO DE EMERGENCIA/EMERGENCY CONTACT PERSON: </label>
+             <input class="controls" type="text" name="Contrasena" value="" placeholder="Nombre de contacto de enmergencia/Enmergency contact person:">
+             
+            <label for=""> Número de Dorsal / Bib Number: </label>
+             <input class="controls" type="text" name= "firma" value="" placeholder="Número de Dorsal / Bib Number:">
+         
+     
+             <input class="button" type="submit" name="" value="Enviar">
+
+         </section>
+    </form>
+
+
+
+
+    <footer class="integrantes">
+        <ul>
+            <li>Cuello Julian</li>
+        </ul>
+    </footer>
+
 </body>
 </html>

@@ -12,7 +12,7 @@ body {
  }
  header {
     
-    background-color: aquamarine;
+    background-color: red;
     text-align: center;
  }
  .navegation {
@@ -36,33 +36,42 @@ body {
  .container {
    display: flex;
    justify-content: space-between;
-   
-   
-   
+
  }
  aside {
    
-   background-color: #666666;
-   color: white;
+  width: 200px;
+  background-color: #333333;
+  color: white;
+
  }
  .img_aside {
-   width: 90%;  
-   height: 90%;
+   width: 60%;  
+   height: 70%;
+
  }
 
  main{
   
+   width: 200px;
   background-color: #99cc33;
-  color: white;
-   
+  color: white; 
 }
+.inscripcion{
+  
+  background-color: #99cc33;
+  color: white; 
+}
+
+
  section {
    
-   background-color: #333333;
+   width: 200px;
+   background-color: #666666;
    color: white;
     
  }
- footer {
+ .integrantes {
     width:100%;
     background-color: brown;
     flex-wrap: wrap;
