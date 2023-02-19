@@ -1,91 +1,117 @@
 * {
-   margin: 0.5px;
-   padding: 0.5px;
-}
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
  }
  
- .navegation {
+ html {
+   height: 100%;
+ }
+ 
+ body {
+   font-family: "Public Sans", sans-serif;
+   font-size: 1.2rem;
+   min-height: 100%;
+ }
 
-  display: flex;
-  background: grey;
-  border-bottom: 5px solid green;
-  padding-left: 0;
+ .nav-group { 
+  
+   display: none;
+   flex-direction: column;
+   list-style: none;
+ }
+
+   .nav-button {
+    display: grid;
+    background: grey;
+    list-style: none;
+    margin: 0px 10px;
+    text-transform: uppercase;
+    padding: 15px;
+     }
+ 
+ .grid-container > * {
+   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+   border-radius: 4px;
+   padding: 10px;
+   text-align: center;
  }
  
-  .nav-button {
-   display: flex;
-   background: grey;
-   list-style: none;
-   margin: 0px 10px;
-   text-transform: uppercase;
-   padding: 15px;
-    }
-    
+ header {
+   grid-area: header;
+   background-color: #85aedd;
+ }
  
-    .container {
-      display: grid;
-      grid-template-columns: 40px 50px auto 50px 40px;
-      grid-template-rows: 25% 100px auto;
-    }
-    header {
-      background-color: #FF4945;
-      padding: 20px 10px;
+ .navbar {
+   grid-area: navbar;
+   background-color: #afd6af;
+ }
+
+ .navbar {
+   grid-area: navbar;
+   background-color: #afd6af;
+ }
+ 
+ .sidebar {
+   grid-area: sidebar;
+   background-color: black;
+ }
+
+ .imagenFutbol {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .main {
+   grid-area: main;
+   background-color: #f5f5f5;
+ }
+ 
+ .footer {
+   grid-area: footer;
+   background-color: #8c96a0;
+ }
+ 
+ .grid-container {
+   display: grid;
+   gap: 10px;
+   grid-template:
+     "header"  100px
+     "navbar"  50px
+     "main"    auto
+     "sidebar" 100px
+     "footer"  100px;
+ }
+ 
+ @media (min-width: 600px) {
+   .grid-container {
+     /* grid-template-columns: 200px auto;
+     grid-template-rows: 100px 50px auto 100px;
+     grid-template-areas: 
+     "header  header"
+     "navbar  navbar"
+     "sidebar main"
+     "footer  footer"; */
+ 
+     grid-template:
+       "header  header" 100px
+       "navbar  navbar" 50px
+       "sidebar main"   auto
+       "footer  footer" 100px /
+       200px    auto;
    }
-   
+ }
+ 
+ @media (min-width: 900px) {
+   .grid-container {
+     grid-template:
+       "header  header header"  100px
+       "navbar  navbarr navbar" auto
+       "main  main   sidebar" auto
+       "footer  footer footer"  100px /
+       200px    auto   200px;
+   }
+ }
+ 
+
     
-    .main {
-      color: white;
-      background-color: #FFA931;
-      padding: 10px;
-     
-      min-height: 300px;  /* solo para el ejemplo */
-    }
-    
-    .section{
-      color: white;
-      background-color: blue;
-      padding: 10px;
-    
-      min-height: 300px;  /* solo para el ejemplo */
-    }
-    
-    .sidebar {
-      color: white;
-      background-color: #9B0579;
-      padding: 10px;
-    }
-    
-    footer {
-      color: white;
-      background-color: #00778F;
-      padding: 20px 10px;
-    }
-    
-    /* agregamos un contenedor flex */
-    .middle-wrapper {
-      display: flex;
-      flex-direction: column;
-    }
-    
-    /* solo para pantallas superiores a 660px */
-    @media only screen and (min-width: 660px) {
-       .middle-wrapper {
-           flex-direction: row;
-        }
-      
-        .main {
-         flex-grow: 3;
-        }
-      
-        .section {
-         flex-grow: 1;
-        }
-    
-        .sidebar {
-          flex-grow: 1;
-        }
-    
-      }
